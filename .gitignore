@@ -1,1 +1,2 @@
-
+# Do not include local node_modules folder if testing without docker
+app/node_modules

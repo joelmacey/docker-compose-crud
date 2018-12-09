@@ -13,3 +13,13 @@ services:
     image: mongo
     ports:
       - "27017:27017"
+  mongo_data:
+    container_name: mongo_data
+    image: mongo
+    depends_on:
+      - app
+      - mongo
+    volumes:
+      - ./mongo:/mongo
+    command:
+      sh ./mongo/import.sh

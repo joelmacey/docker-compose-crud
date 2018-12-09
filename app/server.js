@@ -54,6 +54,7 @@ app.get('/books/edit/:id', (req, res) => {
     res.render('edit.ejs', {items: result});
   });
 });
+
 // Update the item sent in the body with the updated set
 app.post('/books/edit/:id', (req, res) => {
   db.collection(dbName).updateOne({"_id": new mongodb.ObjectId(req.params.id)},
@@ -66,8 +67,6 @@ app.post('/books/edit/:id', (req, res) => {
   });
 });
 
-
-
 // Delete the item sent in the body
 app.get('/books/delete/:id', (req, res
 ) => {
@@ -77,3 +76,9 @@ app.get('/books/delete/:id', (req, res
     res.redirect('/catalogue');
   });
 });
+
+// To Do list
+// Create Mocha Tests
+// Move Routes out of server.js and into it's own folder - bad practice
+// Move Edit into Modal instead of page
+// Make confirm deletion modal for stopping accidental deletion
