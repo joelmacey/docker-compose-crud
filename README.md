@@ -17,3 +17,6 @@ In order to rebuild your app on starting your containers run
 ```
 docker-compose up --build
 ```
+
+I have included a JSON file with 8 sample books to be displayed when the containers start.
+This file was obtained [here](https://gist.github.com/nanotaboada/6396437).
