@@ -2,6 +2,7 @@ version: "2"
 services:
   app:
     container_name: app
+    restart: always
     build: ./app
     ports:
       - "80:80"
