@@ -12,3 +12,8 @@ Run this in the current directory
 ```
 docker-compose up
 ```
+
+In order to rebuild your app on starting your containers run
+```
+docker-compose up --build
+```
