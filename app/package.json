@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A Simple Node.js CRUD with MongoDB using Docker Compose",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Joel Macey",
+  "license": "ISC"
+}
